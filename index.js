@@ -1,3 +1,6 @@
+require('dotenv').config()
+
+
 const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const client = new Client({
     intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers],
@@ -5,7 +8,7 @@ const client = new Client({
 });
 
 // 🔑 Remplace avec le token de ton bot
-const TOKEN = 'MTQ0NDM2NzUyMTU0NDE0MzE2MA.GKLbof.fBO86b_ej6qlcgmmyKpfZQBZ98X-4VmhdkndH8';
+const TOKEN = process.env.TOKEN;
 
 // 🧍 Ton ID Discord
 const MON_ID = '1135572806545985536';

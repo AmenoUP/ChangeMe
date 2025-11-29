@@ -1,5 +1,6 @@
+require('dotenv').config()
 const { REST, Routes, SlashCommandBuilder } = require('discord.js');
-const TOKEN = 'MTQ0NDM2NzUyMTU0NDE0MzE2MA.GKLbof.fBO86b_ej6qlcgmmyKpfZQBZ98X-4VmhdkndH8';
+const TOKEN = process.env.TOKEN;
 const CLIENT_ID = '1444367521544143160';
 const GUILD_ID = '1136595997783494686';
 
